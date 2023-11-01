@@ -18,5 +18,11 @@ pipeline {
                 sh 'mvn sonar:sonar -Dsonar.login=squ_438149b4122b693f05464ca9e8872977a9413de4'
             }
         }
+        
+       stage('mvn deploy'){
+            steps {
+                sh "mvn deploy"
+            }
+       }
      }
   }
