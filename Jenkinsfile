@@ -15,7 +15,7 @@ pipeline {
         }
         stage('SonarQube Scan') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.login=squ_438149b4122b693f05464ca9e8872977a9413de4'
+                sh 'mvn sonar:sonar -Dsonar.login=squ_e050fbc3eb84d4965c2a274608a0c587b00b7154'
             }
         }
         
